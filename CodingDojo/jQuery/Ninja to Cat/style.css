@@ -1,0 +1,10 @@
+#container {
+    margin: 0 auto;
+    width: 970px;
+}
+#puzzle > img {
+    width: 250px;
+    height: 58px;
+    display: block;
+    margin-bottom: 5px;
+}

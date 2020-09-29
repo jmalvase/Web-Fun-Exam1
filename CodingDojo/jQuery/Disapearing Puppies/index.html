@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disappearing Puppies</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('img').click(function(){
+                $(this).hide();
+            });
+            $('#restore').click(function(){
+                $('img').show();
+            })
+        });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="puppies">
+            <h2>Disappearing Puppies</h2>
+            <img src="ohwow.jpg" alt="Puppies">
+            <img src="husk.jpg" alt="Puppies">
+            <img src="m.jpg" alt="Puppies">
+            <img src="nom.jpg" alt="Puppies">
+            <img src="pit.jpg" alt="Puppies">
+            <img src="rot.jpg" alt="Puppies">
+            <img src="shep.jpg" alt="Puppies">
+            <img src="sleep.jpg" alt="Puppies">
+        </div>
+        <button id="restore">Restore</button>
+    </div>
+</body>
+</html>

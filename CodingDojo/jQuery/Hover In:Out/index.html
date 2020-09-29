@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover In/Out</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#giantsOne').hover(function(){
+                    $(this).attr('src','giants2.png');
+                },
+                function() {
+                    $(this).attr('src','giants1.png');
+                });
+            $('#giantsTwo').hover(function(){
+                    $(this).attr('src','bball2.png');
+                },
+                function() {
+                    $(this).attr('src','bball1.png');
+                });
+            $('#nyGiants').hover(function(){
+                    $(this).attr('src','nygiants2.png');
+                },
+                function() {
+                    $(this).attr('src','nygiants1.png');
+                });
+            $('#thumbsUp').hover(function(){
+                    $(this).attr('src','thumbs2.jpg');
+                },
+                function() {
+                    $(this).attr('src','thumbs1.jpg');
+                });
+            });
+    </script>
+</head>
+<body>
+    <div id="container">
+        <div id="images">
+            <h1>Hover In/Out</h1>
+            <img id="giantsOne" src="giants1.png" alt=" SF Giants Logo" data-alt-src="giants2.png">
+            <img id="giantsTwo" src="bball1.png" alt="SF Giants Logo Over Baseball" data-alt-src="bball2.png">
+            <img id="nyGiants" src="nygiants1.png" alt="NY Baseball Giants Logo" data-alt-src="nygiants2.png">
+        </div>
+        <div id="thumbs">
+            <img src="thumbs1.jpg" alt="Thumbs Up" id="thumbsUp" data-alt-src="thumbs2.jpg">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $('document').ready(function(){
+            // AddClass
+            $('#addClass').click(function(){
+                $('#p-AddClass').addClass('red');
+            });
+            // Hide - no parameters
+            $("#no-potato").hide();
+            // Hide - parameters
+            $('#p-hideMe').click(function(){
+                $('#p-hideMe').hide('slow');
+            })
+            // Show
+            $("#hideHeader").click(function(){
+                $('#p-hideMe').show('slow');
+            })
+            // Slide - Toggle, Up, Down
+            $('#slideTog').click(function(){
+                $('#no-potato').slideToggle('slow');
+            })
+            $('#slideUp').click(function(){
+                $('#no-potato').slideUp('slow');
+            })
+            $('#slideDown').click(function(){
+                $('#no-potato').slideDown('slow');
+            })
+            // Append
+            $('#Append').click(function(){
+                $('#p-Append').append(' <p> <strong> And here they are!</strong></p>');
+            })
+            // Toggle w/ Hover
+            $('#toggle').hover(function(){
+                $('#toggleImg').toggle('slow');
+            })
+            // Fade Out
+            $('#fadeOutBut').click(function(){
+                $('#fadeout').fadeOut('slow');
+            })
+            // Fade In
+            $('#fadein').hide();
+            $('#fadeInBut').click(function(){
+                $('#fadein').fadeIn('slow');
+            })
+            // Before
+            $('#beforeButton').click(function(){
+                $('#p-before').before("<b> Hello there! </b>");
+            })
+            // After
+            $('#afterButton').click(function(){
+                $('#p-after').after(' <b> Goodbye now </b> ');
+            })
+            // HTML
+            $('#htmlRefs div').html( '<b> Hello World </b>').css( 'color', 'green' );
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <h1>Add Class</h1>
+        <button id='addClass'>Add Class</button>
+        <p id='p-AddClass'>Click the button to add class 'red' to this paragraph</p>
+    </div>
+    <div>
+        <h1>Slide Toggle</h1>
+        <img id='no-potato' src='nopotato.jpg' alt='no potato'>
+        <button id='slideTog'>SlideToggle</button>
+        <button id="slideUp">SlideUp</button>
+        <button id="slideDown">SlideDown</button>
+
+    </div>
+    <div>
+        <h1>Append</h1>
+        <button id='Append'>Append</button>
+        <p id="p-Append">Click the button to add some new words!</p>
+    </div>
+    <div>
+        <h1 id='hideHeader'>Hide</h1>
+        <p id="p-hideMe">Click here to hide me! Then click Hide to show me! </p>
+    </div>
+    <div>
+        <h3 id='toggle'>Toggle</h3> 
+        <img id='toggleImg' src="toggle.jpg" alt="toggle">
+    </div>
+    <div id='fading'>
+        <button id="fadeOutBut">Fade Out</button>
+        <img src="fadeout.jpg" alt="McFly Fam" id="fadeout">
+        <button id="fadeInBut">Fade In</button>
+        <img src="fadein.jpg" alt="McFly Fam" id="fadein">
+    </div>
+    <div>
+        <h1>Before and After</h1>
+        <p id="p-before">Here is a paragraph that will demonstrate the .before jQuery Tag. Click the button to see what happens!
+        <button id="beforeButton">Click Me!</button></p>
+        <p id="p-after">And this will be the paragraph that demonstrates the .after jQuery Tag. Click the button to see what happens!
+        <button id="afterButton">Click Me!</button></p>
+    </div>
+    <div>
+        <h1>HTML Tag</h1>
+        <div id="htmlRefs">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>

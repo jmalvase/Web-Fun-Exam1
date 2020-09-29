@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>My Registration Form</h1>
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name">
+    <br>
+    <br>
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name">
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <br>
+    <br>
+    <label for="password">Password:</label>  
+    <input type="password" id="password" name="password">
+    <br>
+    <br>
+    <label for="PW_Confirm">PW Confirm:</label>  
+    <input type="password" id="PW_Confirm" name="PW_Confirm">
+    <br>
+    <br>
+    <label for="birthday">Birthday:
+        <input type="date" id="birthday" name="birthday">
+    </label>
+    <br>
+    <br>
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="other">Other</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="decline">Prefer not to say</label>
+    <input type="radio" id="decline" name="gender" value="decline">
+    <br>
+    <br>
+    <label for="describe_yourself">Short Description of Yourself
+        <br>
+        <textarea name="describe_yourself" id="describe_yourself"></textarea>
+    </label>
+    <br>
+    <br>
+    <label for="favorite_language">Favorite Language:
+        <select name="languages" id="favorite_language">
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Ruby">Ruby</option>
+            <option value="C#">C#</option>
+        </select>
+    </label>
+    <br>
+    <br>
+    <input type="submit" value="Submit Me!">
+</body>
+</html>

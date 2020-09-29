@@ -1,0 +1,22 @@
+#container {
+    margin: 0 auto;
+    width: 970px;
+}
+/* Main Content */
+#puppies {
+    padding: 10px 0;
+    height: 365px;
+}    
+    #puppies > img {
+        width: 210px;
+        height: 135px;
+        border: 2px solid black;
+        margin: 0 15px 15px 0;
+    }
+/* Button */
+    #restore {
+        background-color: green;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }

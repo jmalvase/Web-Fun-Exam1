@@ -1,0 +1,19 @@
+#container {
+    margin: 0 auto;
+    width: 970px;
+}
+/* Top 3 Images */
+#images {
+    margin-bottom: 25px;
+}
+    #images > img {
+        width: 250px;
+        height: 200px;
+        margin: 10px 10px;
+    }
+/* Bottom Image */
+    #thumbs > img {
+        width: 600px;
+        height: 400px;
+        margin-left: 125px;
+    }

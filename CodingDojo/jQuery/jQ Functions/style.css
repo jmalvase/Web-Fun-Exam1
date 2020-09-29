@@ -1,0 +1,37 @@
+div {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+p {
+        display: inline-block;
+}
+#no-potato {
+    width: 400px;
+    display: inline-block;
+    margin: 0 10px 20px 0px;
+}
+#slideTog, #slideUp, #slideDown {
+    margin: 0 10px 25px 0;
+    vertical-align: bottom;
+}
+.red {
+    background-color: red;
+}
+#toggleImg {
+    width: 100px;
+}
+    #fading > img {
+        width: 300px;
+        margin: 10px 0;
+    }
+    #fading > button {
+        padding: 5px;
+        vertical-align: top;
+        margin: 100px 25px;
+    }
+#p-before, #p-after {
+    display: block;
+}
+#htmlRefs > div {
+    padding: 10px;
+}
