@@ -1,0 +1,9 @@
+div {
+    margin: 0 auto;
+}
+div > h1{
+    background-color: green;
+}
+div > button {
+    margin: 10px;
+}
